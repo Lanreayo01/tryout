@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link type="text/css" rel="stylesheet" href="custom.css"/>
+</head>
+<body>
+    <div class="left-bar" id="left-bar">
+        <div class="toggle">
+            <button onclick="document.getElementById('left-bar').style.display='none'">Toggle</button>
+        </div>
+
+        <img src="todo-removebg-preview.png"/>
+
+        <div class="menus">
+            <button class="menu"> Dashboard</button>
+            <button class="menu"> Current Task</button>
+            <button class="menu"> Task History</button>
+            <button class="menu"> Setting</button>
+            <button class="menu"> Log-Out</button>
+        </div>
+    </div>
+
+    <div class="right-bar">
+        <button onclick="document.getElementById('left-bar').style.display='block'">
+            <img src="hamburger.png" height="50px"/>
+        </button>
+
+        <div class="alert" id="alert">
+            <div class="alert-title">
+                Welcome Message
+                <button onclick="document.getElementById('alert').style.display='none'"> Close</button>
+            </div>
+            <hr/>
+            <div class="alert-body">
+                You are welcome to our Home page, reach out if you need help
+            </div>
+        </div>
+    </div>
+
+    <div class="first-message" id="first-message"> 
+        <div class="first-message-title">
+            Join us Today
+        </div>
+        <div class="first-message-body">
+            <button onclick="location.href='login.html'"> Yes, continue </button>
+            <button onclick="document.getElementById('first-message').style.display='none'"> No, Exit </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
